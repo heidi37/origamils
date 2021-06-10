@@ -14,8 +14,7 @@
 html {
   color: #4e4e4e;
   font-size: 1em;
-  line-height: 1.4;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body {
@@ -29,7 +28,6 @@ body {
 
 h1, h3 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
   color: #054184;
 }
 
@@ -39,7 +37,10 @@ h2, nav, .navbar-brand, .navbar-light .navbar-nav .nav-link {
 }
 
 h1 {
-  font-size: 3.75rem;
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
 }
 
 h2 {
@@ -51,6 +52,12 @@ h2 {
 
 h3 {
   font-size: 2.125rem;
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.5;
+  margin-top: 20px;
 }
 
 nav {
@@ -85,12 +92,25 @@ nav {
   width: 100%;
 }
 
-.top-row-images, .bottom-row-images, .top-row-about-image {
+.lead {
+  display: none;
+}
+
+.top-row-images, .bottom-row-images, .bottom-row-about-image {
   width: 100%;
   margin-bottom: 30px;
 }
 
+.bottom-row-about-image,
+.top-row-about-image {
+  width: 100%;
+  ÷
+  /* float: right; */
+}
+
+
 .bottom-row-about-image {
+  padding: 50px 50px 0 50px;
   float: right;
 }
 
@@ -98,8 +118,54 @@ nav {
   margin-top: 40px;
 }
 
+figcaption {
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-size: .8em;
+  float: left;
+  max-width: 514px;
+}
+
 #bottom-row-about {
   margin-top: 80px;
+}
+
+footer, footer h2, footer h3 {
+  background: #054184;
+  color: #fafbfd;
+}
+
+footer h2 {
+  margin-top: 40px;
+  padding-top: 60px;
+}
+
+footer {
+  padding: 0 20px 5px 20px;
+}
+
+.form-control {
+  border-radius: 0%;
+}
+
+#submit-button {
+  border-radius: 0%;
+  padding: 10px 50px;
+  margin-top: 10px;
+  font-size: 1.25em;
+}
+
+#follow-me {
+  padding: 80px 0 10px 0;
+}
+
+#twitter {
+  padding: 0 20px;
+}
+
+#copyright {
+  font-size: .8rem;
+  margin-top: 140px;
 }
 
 
@@ -110,29 +176,40 @@ nav {
   body {
     margin: 15px 25px 0;
   }
+
+h1 {
+  font-size: 3.75rem;
+  text-align: left;
+}
+
   #hero-image {
     height: auto;
     max-width: 823px;
   }
-  .top-row-images  {
+
+  .lead {
+    display: block;
+  }
+
+  .top-row-images, .bottom-row-images, .top-row-about-image,
+  .bottom-row-about-image{
     height: auto;
+  }
+
+  .top-row-images  {
     max-width: 622px;
   }
   .bottom-row-images {
-    height: auto;
     max-width: 401px;
   }
   .top-row-about-image {
-    height: auto;
-    max-width: 514px;
+    padding-right: 30px
   }
-
   .bottom-row-about-image {
-    height: auto;
-    max-width: 514px;
+    max-width: 202px;
+    padding: 0 25px 0 0;
   }
-
-  .top-row-about-image, .bottom-row-about-image {
+  .top-row-about-image {
     margin-right: 30px;
   }
 }
@@ -147,9 +224,9 @@ nav {
 }
 
 @media (min-width: 1200px) {
-  .top-row-about-image,  {
+  /* .top-row-about-image,  {
     float: right;
-  }
+  } */
 }
 
 /*
