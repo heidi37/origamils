@@ -85,9 +85,23 @@ nav {
   width: 100%;
 }
 
-/* .row {
-  flex-direction: space-between;
-} */
+.top-row-images, .bottom-row-images, .top-row-about-image {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.bottom-row-about-image {
+  float: right;
+}
+
+#about {
+  margin-top: 40px;
+}
+
+#bottom-row-about {
+  margin-top: 80px;
+}
+
 
 /* ==========================================================================
    Media Queries
@@ -100,6 +114,27 @@ nav {
     height: auto;
     max-width: 823px;
   }
+  .top-row-images  {
+    height: auto;
+    max-width: 622px;
+  }
+  .bottom-row-images {
+    height: auto;
+    max-width: 401px;
+  }
+  .top-row-about-image {
+    height: auto;
+    max-width: 514px;
+  }
+
+  .bottom-row-about-image {
+    height: auto;
+    max-width: 514px;
+  }
+
+  .top-row-about-image, .bottom-row-about-image {
+    margin-right: 30px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -111,9 +146,9 @@ nav {
   }
 }
 
-@media (min-width: 1800px) {
-  #hero-text {
-    padding-left: 150px;
+@media (min-width: 1200px) {
+  .top-row-about-image,  {
+    float: right;
   }
 }
 
