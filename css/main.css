@@ -13,6 +13,7 @@
 
 html {
   color: #4e4e4e;
+  background: #fafbfd;
   font-size: 1em;
   font-size: 14px;
 }
@@ -23,7 +24,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
-  margin: 10px 15px;
+  /* margin: 10px 15px; */
 }
 
 h1, h3 {
@@ -62,6 +63,10 @@ p {
 
 nav {
   font-size: 1.5rem;
+}
+
+.bg-light {
+  background-color: #fafbfd!important;
 }
 
 .container-fluid {
@@ -104,11 +109,7 @@ nav {
 .bottom-row-about-image,
 .top-row-about-image {
   width: 100%;
-  ÷
-  /* float: right; */
 }
-
-
 .bottom-row-about-image {
   padding: 50px 50px 0 50px;
   float: right;
@@ -123,7 +124,6 @@ figcaption {
   padding: 0;
   font-size: .8em;
   float: left;
-  max-width: 514px;
 }
 
 #bottom-row-about {
@@ -174,19 +174,18 @@ footer {
  ========================================================================== */   
 @media (min-width: 768px) {
   body {
-    margin: 15px 25px 0;
+    padding-top: 40px;
   }
 
-h1 {
-  font-size: 3.75rem;
-  text-align: left;
-}
+  h1 {
+    font-size: 3.75rem;
+    text-align: left;
+  }
 
   #hero-image {
     height: auto;
     max-width: 823px;
   }
-
   .lead {
     display: block;
   }
@@ -199,9 +198,11 @@ h1 {
   .top-row-images  {
     max-width: 622px;
   }
+
   .bottom-row-images {
     max-width: 401px;
   }
+
   .top-row-about-image {
     padding-right: 30px
   }
@@ -209,24 +210,30 @@ h1 {
     max-width: 202px;
     padding: 0 25px 0 0;
   }
+
   .top-row-about-image {
     margin-right: 30px;
   }
 }
 
 @media (min-width: 992px) {
-  body {
-    margin: 20px 40px 0;
-  }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 3rem;
   }
 }
 
 @media (min-width: 1200px) {
-  /* .top-row-about-image,  {
-    float: right;
-  } */
+  footer {
+    height: 1028px;
+  }
+
+  #contact {
+    margin-bottom: 150px;
+  }
+
+  #copyright {
+    margin-top: 250px;
+  }
 }
 
 /*

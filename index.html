@@ -10,7 +10,7 @@
   <meta property="og:title" content="Origamils">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://heidifryzell.com/origamils">
-  <meta property="og:image" content="http://heidifryzell.com/origamils/img/screenshot.plugins">
+  <meta property="og:image" content="http://heidifryzell.com/origamils/img/screenshot.png">
 
   <!-- <link rel="manifest" href="site.webmanifest"> -->
   <!-- <link rel="apple-touch-icon" href="icon.png"> -->
@@ -70,7 +70,7 @@
       </div>
     </div>
 
-    <h2 id="#pieces">pieces</h2>
+    <h2 id="pieces">pieces</h2>
 
     <div class="container">
       <div id="top-row" class="row justify-content-between">
@@ -102,9 +102,11 @@
     <div class="container">
       <div id="top-row-about" class="row justify-content-between ">
       <div class="col-12 col-md-6 ">
-        <img class="top-row-about-image" src="img/golden-venture-eagle-2.jpg" alt = "eagle made on the Golden Venture" />
-        <figcaption>Eagle (Fly to Freedom), 1995. Folded magazine pages, cardboard, papier-mâché, liquid glue and colored marker. Museum of Chinese in America (MOCA) Collections.
+        <figure>
+          <img class="top-row-about-image" src="img/golden-venture-eagle-2.jpg" alt = "eagle made on the Golden Venture" />
+          <figcaption>Eagle (Fly to Freedom), 1995. Folded magazine pages, cardboard, papier-mâché, liquid glue and colored marker. Museum of Chinese in America (MOCA) Collections.
           <a href="https://bombmagazine.org/articles/fold-golden-venture-paper-sculptures/" target="_blank">https://bombmagazine.org/articles/fold-golden-venture-paper-sculptures/</a></figcaption>
+        </figure>
       </div>
       <div class="col-12 col-md-6">
         <h3>What is 3D Origami?</h3>
@@ -134,12 +136,12 @@
         <div class="col-12 col-lg-6 p-3">
           <h3>Reach out to me...</h3>
           <p>If you are interested in commissioning a custom 3D origami piece please fill out this form and I will get right back to you!</p>
-          <form action="mail.php" method="POST" class="mt-5">
+          <form action="contact.php" method="post" class="mt-5">
             <div class="mb-4">
-              <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Your email address...">
+              <input type="email" class="form-control form-control-lg" id="email" name="visitor_email" placeholder="Your email address..." required>
             </div>
             <div class="mb-3">
-              <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="6"  placeholder="Your message..."></textarea>
+              <textarea class="form-control form-control-lg" id="message" name="visitor_message" rows="6"  placeholder="Your message..." required></textarea>
             </div>
             <div class="d-grid gap-2 d-flex justify-content-end">
             <button type="submit" class="btn btn-primary btn-lg" id="submit-button">SEND</button>
@@ -157,7 +159,6 @@
           </div>
 
         </div>
-      </div>
       <p id="copyright" class="text-center">&copy; 2021</p>
     </footer>
     
