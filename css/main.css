@@ -111,7 +111,7 @@ nav {
   width: 100%;
 }
 .bottom-row-about-image {
-  padding: 50px 50px 0 50px;
+  padding: 20px 50px 0 50px;
   float: right;
 }
 
@@ -126,7 +126,7 @@ figcaption {
   float: left;
 }
 
-#bottom-row-about {
+#bottom-row-about, #top-row-about {
   margin-top: 80px;
 }
 
@@ -227,12 +227,10 @@ footer {
     height: 1028px;
   }
 
-  #contact {
-    margin-bottom: 150px;
-  }
+
 
   #copyright {
-    margin-top: 250px;
+    margin-top: 275px;
   }
 }
 
