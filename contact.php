@@ -47,7 +47,7 @@
                 function post_captcha($user_response) {
                     $fields_string = '';
                     $fields = array(
-                        'secret' => 'SECRET_KEY',
+                        'secret' => 'TOP_SECRET_CODE',
                         'response' => $user_response
                     );
                     foreach($fields as $key=>$value)
